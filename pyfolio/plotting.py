@@ -1725,7 +1725,7 @@ def plot_monthly_returns_timeseries(returns, ax=None, **kwargs):
 
         count += 1
 
-    ax.axhline(0.0, color='darkgray', ls='-')
+    ax.axhline(0.0, color='red', ls='-')
     ax.set_xticks(xticks_coord)
     ax.set_xticklabels(xticks_label)
 
