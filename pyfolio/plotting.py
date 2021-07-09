@@ -792,7 +792,7 @@ def plot_rolling_returns(returns,
     if factor_returns is not None:
         cum_factor_returns = ep.cum_returns(
             factor_returns[cum_rets.index], 1.0)
-        cum_factor_returns.plot(lw=2, color='gray',
+        cum_factor_returns.plot(lw=2, color='red',
                                 label=factor_returns.name, alpha=0.60,
                                 ax=ax, **kwargs)
 
@@ -1721,7 +1721,7 @@ def plot_monthly_returns_timeseries(returns, ax=None, **kwargs):
             xticks_label.append(i)
             xticks_coord.append(count)
             # plot yearly boundary line
-            ax.axvline(count, color='gray', ls='--', alpha=0.3)
+            ax.axvline(count, color='red', ls='--', alpha=0.3)
 
         count += 1
 
