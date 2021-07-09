@@ -934,7 +934,7 @@ def create_interesting_times_tear_sheet(returns, benchmark_rets=None,
 
         if benchmark_rets is not None:
             ep.cum_returns(bmark_interesting[name]).plot(
-                ax=ax, color='gray', label='benchmark', alpha=0.6)
+                ax=ax, color='red', label='benchmark', alpha=0.6)
             ax.legend(['Algo',
                        'benchmark'],
                       loc=legend_loc, frameon=True, framealpha=0.5)
